@@ -3,6 +3,8 @@ body {
     color: #555;
     background: #333;
     margin: 3em;
+    background-image: url(/images/background.jpg);
+    background-size: cover;
 }
 
 .portfolio {
@@ -14,7 +16,7 @@ body {
 
 .portfolio-title {
     text-align: center;
-    color: #00C896;
+    color: #FFCC00;
     grid-column: 1 / -1;
 }
 
@@ -24,11 +26,37 @@ img {
 
 .portfolio-card {
     box-shadow: 0 0 1em rgba(0,0,0,.25);
-    padding: 1em;
+    /* padding: 1em; */
     background: white;
+    position:relative;
 }
 
 .portfolio-card-title {
     font-size: 1.5rem;
     color: #000;
+
+}
+
+.item {
+    position: relative;
+}
+.img-banner {
+    /*
+    Challenge:
+    1. Position the image banner at the top left 
+       of the first image as per the slide. What
+       CSS do you need to add to the parent 
+       element to make this work?
+    */ 
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #990000;
+        color: #FFCC00;
+        padding: 8px;
+        font-size: small;
+    }
+
+.info {
+    padding: 1em;
 }
