@@ -6,6 +6,9 @@ body {
     background-image: url(/images/background.jpg);
     background-size: cover;
 }
+h1{
+    font-size: 4rem;
+}
 
 .portfolio {
     padding: 1em;
@@ -35,11 +38,16 @@ img {
 .portfolio-card-title {
     font-size: 1.5rem;
     color: #990000;
+    margin-bottom: 0;
 
+}
+.portfolio-card-p{
+    margin-top: .5em;
 }
 
 .item {
     position: relative;
+
 }
 .img-banner {
     /*
@@ -72,7 +80,7 @@ img {
             color: #990000;
             padding: 4px;
             font-size: small;
-            width: 40%;
+            width: 50%;
             text-align: center;
             padding: .5em;
             font-weight: 600;
@@ -80,7 +88,8 @@ img {
         }
 
 .info {
-    padding: 1em;
+    padding: 0em 1em 0.5em 1em;
+    margin-top: 0;
 }
 
 
@@ -92,5 +101,9 @@ img {
         grid-template-columns: repeat(1, 350px);
         grid-gap: 1em;
     } 
+
+    h1{
+        font-size: 2.5rem;
+    }
 
 }
