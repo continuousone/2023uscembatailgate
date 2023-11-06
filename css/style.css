@@ -60,3 +60,15 @@ img {
 .info {
     padding: 1em;
 }
+
+
+@media (max-width: 400px){
+
+    .portfolio {
+        padding: 1em;
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        grid-gap: 1em;
+    } 
+
+}
