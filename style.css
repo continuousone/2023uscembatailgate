@@ -1,0 +1,110 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #555;
+    background: #333;
+    margin: 3em;
+    background-image: url(/images/background.jpg);
+    background-size: cover;
+}
+h1{
+    font-size: 4rem;
+}
+
+.portfolio {
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1em;
+} 
+
+.portfolio-title {
+    text-align: center;
+    color: #FFCC00;
+    grid-column: 1 / -1;
+}
+
+img {
+    max-width: 100%;
+    position: relative;
+}
+
+.portfolio-card {
+    box-shadow: 0 0 1em rgba(0,0,0,.25);
+    /* padding: 1em; */
+    background: white;
+    position:relative;
+}
+
+.portfolio-card-title {
+    font-size: 1.5rem;
+    color: #990000;
+    margin-bottom: 0;
+
+}
+.portfolio-card-p{
+    margin-top: .5em;
+    margin-bottom: 2em;
+}
+
+.item {
+    position: relative;
+
+}
+.img-banner {
+    /*
+    Challenge:
+    1. Position the image banner at the top left 
+       of the first image as per the slide. What
+       CSS do you need to add to the parent 
+       element to make this work?
+    */ 
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #990000;
+        color: #FFCC00;
+        padding: 8px;
+        font-size: small;
+    }
+    .img-banner-btm{
+        /*
+        Challenge:
+        1. Position the image banner at the top left 
+           of the first image as per the slide. What
+           CSS do you need to add to the parent 
+           element to make this work?
+        */ 
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color:#FFCC00; 
+            color: #990000;
+            padding: 4px;
+            font-size: small;
+            width: 50%;
+            text-align: center;
+            padding: .5em;
+            font-weight: 600;
+            justify-content: center;
+        }
+
+.info {
+    padding: 0em 1em 0.5em 1em;
+    margin-top: 0;
+}
+
+
+@media (max-width: 350px){
+
+    .portfolio {
+        padding: 1em;
+        display: grid;
+        grid-template-columns: repeat(2, 350px);
+        grid-gap: 1em;
+    } 
+
+    h1{
+        font-size: 2.5rem;
+    }
+
+}
