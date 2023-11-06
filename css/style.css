@@ -22,6 +22,7 @@ body {
 
 img {
     max-width: 100%;
+    position: relative;
 }
 
 .portfolio-card {
@@ -56,6 +57,27 @@ img {
         padding: 8px;
         font-size: small;
     }
+    .img-banner-btm{
+        /*
+        Challenge:
+        1. Position the image banner at the top left 
+           of the first image as per the slide. What
+           CSS do you need to add to the parent 
+           element to make this work?
+        */ 
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color:#FFCC00; 
+            color: #990000;
+            padding: 4px;
+            font-size: small;
+            width: 40%;
+            text-align: center;
+            padding: .5em;
+            font-weight: 600;
+            justify-content: center;
+        }
 
 .info {
     padding: 1em;
@@ -67,7 +89,7 @@ img {
     .portfolio {
         padding: 1em;
         display: grid;
-        grid-template-columns: repeat(2, 200px);
+        grid-template-columns: repeat(1, 350px);
         grid-gap: 1em;
     } 
 
