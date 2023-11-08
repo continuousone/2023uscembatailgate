@@ -43,6 +43,7 @@ img {
 }
 .portfolio-card-p{
     margin-top: .5em;
+    margin-bottom: 2em;
 }
 
 .item {
@@ -85,6 +86,7 @@ img {
             padding: .5em;
             font-weight: 600;
             justify-content: center;
+            margin-top: .5em;
         }
 
 .info {
